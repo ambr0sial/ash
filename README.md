@@ -15,7 +15,11 @@
 ## ✨ Run the scripts
 
 1. Open PowerShell.
-2. Use the following command to run a script, replacing `SCRIPTNAME` with the actual script name:
+2. Use the first command to run the ASH AIO (All in One) which lets you access every script in a single window, or use the second command to run a script individually:
+
+```powershell
+irm ash.ambrosial.fun/aio.ps1 | iex
+```
 
 ```powershell
 irm ambrosial.fun/scripts/SCRIPTNAME.ps1 | iex
