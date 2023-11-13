@@ -1,12 +1,14 @@
 body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header {
@@ -15,6 +17,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #search-container {
@@ -27,6 +30,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 h1 {
@@ -41,6 +45,7 @@ h2 {
 
 ul {
     list-style-type: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 li {
@@ -60,6 +65,7 @@ footer {
     text-align: center;
     color: black;
     padding: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 code {
@@ -84,4 +90,34 @@ code {
 
 .heart:hover {
     color: red;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode footer {
+    color: #fff;
+}
+
+.dark-mode .heart {
+    color: #fff;
+}
+
+.dark-mode .heart:hover {
+    color: red;
+}
+
+header {
+    background: linear-gradient(to right, #6E5477, pink);
+}
+
+.dark-mode header {
+    background: linear-gradient(to right, #6E5477, rgb(43, 43, 43));
+}
+
+.dark-mode code {
+    background-color: #333;
+    color: #fff;
 }

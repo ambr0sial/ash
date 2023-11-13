@@ -10,3 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.setAttribute("target", "_blank");
     });
 });
+
+document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
