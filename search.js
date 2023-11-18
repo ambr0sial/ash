@@ -1,7 +1,8 @@
 const scripts = [
     "spotify_updates_controller.ps1",
     "spotify_uninstaller.ps1",
-    "sysinfo.ps1"
+    "sysinfo.ps1",
+    "windows_activation.ps1"
 ];
 
 function updateSearchResults() {
