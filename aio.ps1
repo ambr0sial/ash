@@ -40,22 +40,22 @@ Function Show-Menu {
 
 Function Execute-Script1 {
     Write-Host "Executing.."
-    irm ambrosial.fun/scripts/spotify-updates-controller.ps1 | iex
+    irm ash.ambrosial.fun/scripts/spotify_updates_controller.ps1 | iex
 }
 
 Function Execute-Script2 {
     Write-Host "Executing.."
-    irm ambrosial.fun/scripts/spotify-uninstaller.ps1 | iex
+    irm ash.ambrosial.fun/scripts/spotify_uninstaller.ps1 | iex
 }
 
 Function Execute-Script3 {
     Write-Host "Executing.."
-    irm ambrosial.fun/scripts/sysinfo.ps1 | iex
+    irm ash.ambrosial.fun/scripts/sysinfo.ps1 | iex
 }
 
 Function Execute-Script4 {
     Write-Host "Executing.."
-    irm ambrosial.fun/scripts/windows_activation.ps1 | iex
+    irm ash.ambrosial.fun/scripts/windows_activation.ps1 | iex
 }
 
 Function Main {
