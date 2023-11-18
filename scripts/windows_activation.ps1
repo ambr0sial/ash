@@ -33,6 +33,7 @@ switch ($versionChoice) {
     }
     default {
         Write-Host "ASH - Invalid choice. Please enter a valid Windows version." -ForegroundColor Red
+        Exit
     }
 }
 
