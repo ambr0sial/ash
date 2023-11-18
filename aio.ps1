@@ -34,22 +34,28 @@ Function Show-Menu {
     Write-Host "1. Spotify Updates Controller"
     Write-Host "2. Spotify Uninstaller"
     Write-Host "3. System Information Gatherer"
-    Write-Host "4. Exit"
+    Write-Host "4. Windows Activator"
+    Write-Host "0. Exit"
 }
 
 Function Execute-Script1 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/spotify-updates-controller.ps1 | iex
+    irm ambrosial.fun/scripts/spotify-updates-controller.ps1 | iex
 }
 
 Function Execute-Script2 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/spotify-uninstaller.ps1 | iex
+    irm ambrosial.fun/scripts/spotify-uninstaller.ps1 | iex
 }
 
 Function Execute-Script3 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/sysinfo.ps1 | iex
+    irm ambrosial.fun/scripts/sysinfo.ps1 | iex
+}
+
+Function Execute-Script4 {
+    Write-Host "Executing.."
+    irm ambrosial.fun/scripts/windows_activation.ps1 | iex
 }
 
 Function Main {
@@ -60,7 +66,8 @@ Function Main {
         "1" { Execute-Script1 }
         "2" { Execute-Script2 }
         "3" { Execute-Script3 }
-        "4" { return }
+        "4" { Execute-Script4 }
+        "0" { return }
         Default { Write-Host "Invalid choice. Please select a valid option." }
     }
     
