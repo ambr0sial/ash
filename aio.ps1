@@ -35,6 +35,7 @@ Function Show-Menu {
     Write-Host "2. Spotify Uninstaller"
     Write-Host "3. System Information Gatherer"
     Write-Host "4. Windows Activator"
+    Write-Host "5. System Health Check"
     Write-Host "0. Exit"
 }
 
@@ -58,6 +59,11 @@ Function Execute-Script4 {
     irm ash.ambrosial.fun/scripts/windows_activation.ps1 | iex
 }
 
+Function Execute-Script5 {
+    Write-Host "Executing.."
+    irm ash.ambrosial.fun/scripts/system_health_check.ps1 | iex
+}
+
 Function Main {
     Show-Menu
     $choice = Read-Host "Enter your choice"
@@ -67,6 +73,7 @@ Function Main {
         "2" { Execute-Script2 }
         "3" { Execute-Script3 }
         "4" { Execute-Script4 }
+        "5" { Execute-Script5 }
         "0" { return }
         Default { Write-Host "Invalid choice. Please select a valid option." }
     }
