@@ -22,5 +22,5 @@ irm ash.ambrosial.fun/aio.ps1 | iex
 ```
 
 ```powershell
-irm ambrosial.fun/scripts/SCRIPTNAME.ps1 | iex
+irm ash.ambrosial.fun/scripts/SCRIPTNAME.ps1 | iex
 ```
