@@ -41,27 +41,27 @@ Function Show-Menu {
 
 Function Execute-Script1 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/spotify_updates_controller.ps1 | iex
+    irm ash.ambrosial.space/scripts/spotify_updates_controller.ps1 | iex
 }
 
 Function Execute-Script2 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/spotify_uninstaller.ps1 | iex
+    irm ash.ambrosial.space/scripts/spotify_uninstaller.ps1 | iex
 }
 
 Function Execute-Script3 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/sysinfo.ps1 | iex
+    irm ash.ambrosial.space/scripts/sysinfo.ps1 | iex
 }
 
 Function Execute-Script4 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/windows_activation.ps1 | iex
+    irm ash.ambrosial.space/scripts/windows_activation.ps1 | iex
 }
 
 Function Execute-Script5 {
     Write-Host "Executing.."
-    irm ash.ambrosial.fun/scripts/system_health_check.ps1 | iex
+    irm ash.ambrosial.space/scripts/system_health_check.ps1 | iex
 }
 
 Function Main {
